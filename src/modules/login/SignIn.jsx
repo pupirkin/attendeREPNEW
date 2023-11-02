@@ -27,9 +27,9 @@ function SignIn() {
         navigate('/mainpage'); // Replace '/mainpage' with the actual route you want to navigate to.
     } else {
       // Handle incorrect login here, for example, show an error message
-    <div className="text" style={{ color: 'red' }}>
-  Incorrect email or password
-</div>
+          setShowAlert(true);
+       
+
 
     }
   };
@@ -73,6 +73,7 @@ function SignIn() {
             </label>
           </div>
           <div className="forgot-pass">
+                <Modal show={showAlert} onHide={() => setShowAlert(false)}>
             <a href="#">Forgot Password?</a>
           </div>
           <button className="buttonLogin" onClick={handleSignIn}>
@@ -82,6 +83,7 @@ function SignIn() {
       </div>
     </div>
   );
+    
 }
 
 export default SignIn;
