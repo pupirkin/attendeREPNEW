@@ -27,7 +27,10 @@ function SignIn() {
         navigate('/mainpage'); // Replace '/mainpage' with the actual route you want to navigate to.
     } else {
       // Handle incorrect login here, for example, show an error message
-      navigate('/SigninError')
+    <div className="text" style={{ color: 'red' }}>
+  Incorrect email or password
+</div>
+
     }
   };
 
