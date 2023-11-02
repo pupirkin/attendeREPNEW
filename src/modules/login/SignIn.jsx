@@ -29,6 +29,24 @@ function SignIn() {
       // Handle incorrect login here, for example, show an error message
       alert('Incorrect email or password');
     }
+      if (email === '38520@iitu.edu.kz' && password === '123123') {
+        navigate('/mainpage'); // Replace '/mainpage' with the actual route you want to navigate to.
+    } else {
+      // Handle incorrect login here, for example, show an error message
+      alert('Incorrect email or password');
+    }
+      if (email === '38519@iitu.edu.kz' && password === 'Bolat') {
+        navigate('/mainpage'); // Replace '/mainpage' with the actual route you want to navigate to.
+    } else {
+      // Handle incorrect login here, for example, show an error message
+      alert('Incorrect email or password');
+    }
+      if (email === '38515@iitu.edu.kz' && password === '123123') {
+        navigate('/mainpage'); // Replace '/mainpage' with the actual route you want to navigate to.
+    } else {
+      // Handle incorrect login here, for example, show an error message
+      alert('Incorrect email or password');
+    }
   };
 
   return (
