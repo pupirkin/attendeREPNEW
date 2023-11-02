@@ -41,7 +41,7 @@ function Header() {
 
                 <div className="Icons">
                     <Link><img src={user} className="icons" /></Link>
-                    <Link to="/signin"><img src={exit} className="icons" /></Link>
+                    <Link to="/"><img src={exit} className="icons" /></Link>
                 </div>
             </div>
         </div>
