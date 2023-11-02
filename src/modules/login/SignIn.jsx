@@ -96,7 +96,7 @@
 
 
 
-
+import { useNavigate } from "react-router-dom";
 import React, { useState } from 'react';
 import './signin.css';
 import { Link } from 'react-router-dom';
@@ -123,6 +123,7 @@ function SignIn() {
 
     if (email === '38516@iitu.edu.kz' && password === '123123') {
       // Handle successful login
+        navigate('/mainpage'); // Replace '/mainpage' with the actual route you want to navigate to.
       alert('Login successful');
     } else {
       // Handle incorrect login here, for example, show an error message
