@@ -99,6 +99,7 @@
 
 import React, { useState } from 'react';
 import './signin.css';
+import { Link } from 'react-router-dom';
 
 function SignIn() {
   const [isChecked, setIsChecked] = useState(false);
@@ -117,13 +118,15 @@ function SignIn() {
     setPassword(e.target.value);
   };
 
-  const handleSignIn = () => {
+  const handleSignIn = (e) => {
+    e.preventDefault(); // Prevent the default form submission
+
     if (email === '38516@iitu.edu.kz' && password === '123123') {
-      // Redirect to mainpage.jsx
+      // Handle successful login
+      alert('Login successful');
     } else {
       // Handle incorrect login here, for example, show an error message
       alert('Incorrect email or password');
-return SignIn;
     }
   };
 
@@ -131,7 +134,7 @@ return SignIn;
     <div className="Signin">
       <div className="content">
         <div className="text">Sign In</div>
-        <form action="/mainpage">
+        <form onSubmit={handleSignIn}>
           <div className="field">
             <input
               required=""
@@ -168,7 +171,7 @@ return SignIn;
           <div className="forgot-pass">
             <a href="#">Forgot Password?</a>
           </div>
-          <button className="buttonLogin" onClick={handleSignIn}>
+          <button className="buttonLogin" type="submit">
             Login
           </button>
         </form>
@@ -178,4 +181,3 @@ return SignIn;
 }
 
 export default SignIn;
-
