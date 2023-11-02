@@ -123,8 +123,9 @@ function SignIn() {
 
     if (email === '38516@iitu.edu.kz' && password === '123123') {
       // Handle successful login
-        navigate('/mainpage'); // Replace '/mainpage' with the actual route you want to navigate to.
       alert('Login successful');
+                navigate('/mainpage'); // Replace '/mainpage' with the actual route you want to navigate to.
+
     } else {
       // Handle incorrect login here, for example, show an error message
       alert('Incorrect email or password');
