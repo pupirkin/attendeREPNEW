@@ -27,7 +27,7 @@ function SignIn() {
         navigate('/mainpage'); // Replace '/mainpage' with the actual route you want to navigate to.
     } else {
       // Handle incorrect login here, for example, show an error message
-      alert('Incorrect email or password');
+      navigate('/SigninError')
     }
   };
 
